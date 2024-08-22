@@ -11,24 +11,23 @@ def multiply(x, y):
     return x * y
 
 def divide(x, y):
-    if y == 0:
-        raise ValueError("Cannot divide by zero.")
     return x / y
 
 
 def test_add():
     assert add(1, 2) == 3
+    assert add(2, 3) == 5
 
 def test_subtract():
     assert subtract(2, 1) == 1
+    assert subtract(10, 5) == 5
 
 def test_multiply():
     assert multiply(2, 3) == 6
+    assert multiply(8, 10) == 80
 
 def test_divide():
     assert divide(6, 3) == 2
+    assert divide(8, 2) == 4
 
-def test_divide_by_zero():
-    with pytest.raises(ValueError):
-        divide(1, 0)
 

@@ -32,3 +32,16 @@ jobs:
       run: |
         cd src
         python -m pytest calculator.py
+
+    - name: Notify on failure
+      if: failure()
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const context = require('@actions/github').context;
+          const octokit = require('@actions/github').getOctokit(process.env.GITHUB_TOKEN);
+          await octokit.rest.issues.createComment({
+            ...context.repo,
+            issue_number: context.issue.number,
+            body: 'The build failed. Please check the details in the Actions tab.'
+          });

@@ -12,7 +12,6 @@ This project serves as a sample repository for practicing Git workflows and comm
 ## Repository Structure
 
 - `README.md`: This file, containing project information and instructions.
-- `LICENSE`: A sample license file.
 - `my-awesome-script.py`: A Python script with a series of print statements demonstrating different messages.
 
 ## Getting Started
@@ -99,14 +98,9 @@ Here are some Git commands used in this project:
     git rebase -i HEAD~3
     ```
 
-## License
-
-This project includes a sample license file. Please replace it with your actual license as needed.
 
 ## Contributing
 
 Feel free to fork the repository, make changes, and submit pull requests. For any issues or suggestions, open an issue in this repository.
 
-## Contact
 
-For any questions, please contact [your-email@example.com](mailto:your-email@example.com).

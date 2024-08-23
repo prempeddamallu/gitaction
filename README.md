@@ -12,6 +12,7 @@ This project serves as a sample repository for practicing Git workflows and comm
 ## Repository Structure
 
 - `README.md`: This file, containing project information and instructions.
+- `LICENSE`: A sample license file.
 - `my-awesome-script.py`: A Python script with a series of print statements demonstrating different messages.
 
 ## Getting Started
